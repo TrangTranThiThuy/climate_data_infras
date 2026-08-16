@@ -1,0 +1,19 @@
+[project]
+name = "climate-data-infras"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Axel Waserman", email = "axel@Axels-MBP.local" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "dbt-core>=1.12.2",
+]
+
+[project.scripts]
+climate-data-infras = "climate_data_infras:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"

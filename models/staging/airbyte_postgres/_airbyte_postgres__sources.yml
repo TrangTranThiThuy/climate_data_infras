@@ -1,0 +1,12 @@
+version: 2
+
+source:
+  - name : airbyte_postgres
+    schema : airbyte_raw
+    tables : 
+      - name: weather_underground_fr 
+        indentifier: weather_underground_FR
+      - name: weather_underground_be
+        indentifier: weather_underground_BE
+      - name: station_infoclimat
+        indentifier: station_infoclimat

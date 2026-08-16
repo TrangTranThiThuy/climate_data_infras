@@ -1,0 +1,11 @@
+version: 2
+
+models: 
+  - name: stg__station_infoclimat
+    description: "Staging model for Infoclimat weather station data, cleaned from Airbyte raw source."
+    columns:
+      - name: _airbyte_raw_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
