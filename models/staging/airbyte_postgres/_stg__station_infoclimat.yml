@@ -1,11 +1,33 @@
 version: 2
 
 models: 
-  - name: stg__station_infoclimat
+  - name: stg_station_infoclimat
     description: "Staging model for Infoclimat weather station data, cleaned from Airbyte raw source."
     columns:
       - name: _airbyte_raw_id
         description: "The primary key for this table"
         data_tests:
           - unique
+          - not_null
+  - name: stg_infoclimat__stations
+    description: "One row per Infoclimat weather station, unnested from the raw stations array."
+    columns:
+      - name: station_id
+        description: "Unique station identifier"
+        data_tests:
+          - unique
+          - not_null
+      - name: station_name
+        description: "Human-readable station name"
+
+  - name: stg_infoclimat__hourly
+    description: "One row per station per hourly weather reading, unnested from the raw hourly object."
+    columns:
+      - name: station_id
+        description: "References the station this reading belongs to"
+        data_tests:
+          - not_null
+      - name: observed_at
+        description: "Timestamp of the reading (UTC)"
+        data_tests:
           - not_null

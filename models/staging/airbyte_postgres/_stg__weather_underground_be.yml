@@ -1,7 +1,7 @@
 version: 2
 
-model: 
-  - name: stg__weather_underground_be
+models: 
+  - name: stg_weather_underground_be
     description: "Staging model for Weather underground Belgium data, cleaned from Airbyte raw source."
     columns:
       - name: _airbyte_raw_id
