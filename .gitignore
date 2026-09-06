@@ -3,3 +3,12 @@ target/
 dbt_packages/
 logs/
 .env
+
+/data
+/excel_data
+
+.DS_Store
+
+.xlsx
+.csv
+.xls
