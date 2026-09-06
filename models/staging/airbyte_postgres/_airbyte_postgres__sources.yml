@@ -10,3 +10,4 @@ sources:
         identifier: weather_underground_BE_processed
       - name: station_infoclimat
       - name: weather_underground_fr_be
+        identifier: weather_underground_fr_be
