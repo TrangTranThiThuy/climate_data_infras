@@ -1,0 +1,11 @@
+version: 2
+
+models: 
+  - name: stg_weather_underground_fr_be
+    description: "Staging model for Weather underground France and Belgium, transformed and combined from Airbyte"
+    columns:
+      - name: _airbyte_raw_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null

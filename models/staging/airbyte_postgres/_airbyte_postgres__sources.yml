@@ -5,7 +5,8 @@ sources:
     schema : airbyte_raw
     tables : 
       - name: weather_underground_fr 
-        identifier: weather_underground_FR
+        identifier: weather_underground_FR_processed
       - name: weather_underground_be
-        identifier: weather_underground_BE
+        identifier: weather_underground_BE_processed
       - name: station_infoclimat
+      - name: weather_underground_fr_be

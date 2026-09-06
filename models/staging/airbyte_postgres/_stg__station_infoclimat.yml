@@ -9,6 +9,10 @@ models:
         data_tests:
           - unique
           - not_null
+  
+  - name: stg_infoclimat__metric
+    description: "metadata about the metrics available in the Infoclimat source, including their units and descriptions."
+
   - name: stg_infoclimat__stations
     description: "One row per Infoclimat weather station, unnested from the raw stations array."
     columns:
