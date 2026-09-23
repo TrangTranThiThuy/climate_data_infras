@@ -20,8 +20,8 @@ unnested as (
         (reading.value ->> 'temperature')::numeric as temperature,
         (reading.value ->> 'pression')::numeric as pressure,
         (reading.value ->> 'humidite')::numeric as humidity,
-        (reading.value ->> 'vent_moyen')::numeric as wind_speed,
-        (reading.value ->> 'vent_direction')::numeric as wind_direction,
+        (reading.value ->> 'vent_moyen')::numeric as speed,
+        (reading.value ->> 'vent_direction')::numeric as wind,
         (reading.value ->> 'pluie_1h')::numeric as rain_1h
     from by_station,
          jsonb_array_elements(readings) as reading(value)

@@ -26,8 +26,8 @@ joined as (
         h.temperature,
         h.pressure,
         h.humidity,
-        h.wind_speed,
-        h.wind_direction,
+        h.speed,
+        h.wind,
         h.rain_1h,
 
         'infoclimat' as source

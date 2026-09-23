@@ -1,0 +1,36 @@
+version: 2
+
+models:
+
+  - name: data_prediction
+    description: >
+      "Final analytical weather dataset used for weather analysis
+      and electricity demand forecasting."
+    contraints:
+      - type: not_null
+        columns:
+          - station_id
+          - observed_at
+        warning_unenfored: false 
+
+    columns:
+
+      - name: station_id
+        description: "Unique identifier of the weather station."
+        tests:
+          - not_null
+
+      - name: observed_at
+        description: "UTC timestamp of the weather observation."
+        tests:
+          - not_null
+
+      - name: temperature
+        description: "Temperature measured at the station."
+
+      - name: humidity
+        description: "Relative humidity."
+
+      - name: pressure
+        description: "Atmospheric pressure."
+  

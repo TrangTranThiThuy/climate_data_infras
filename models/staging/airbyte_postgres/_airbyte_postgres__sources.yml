@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name : airbyte_postgres
+    description : "Source data from Airbyte Postgres connector"
     schema : airbyte_raw
     tables : 
       - name: weather_underground_fr 

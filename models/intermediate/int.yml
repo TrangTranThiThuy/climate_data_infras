@@ -15,9 +15,21 @@ models:
         description: "UTC timestamp of the observation."
         tests:
           - not_null
-
+  
+  - name: int_weather_station_pro
+    description: "Data from professional weather stations"
+    columns: 
+      - name: oberved_at
+        description: "Timestamp of the observation."
+        tests:
+          - not_null
+      - name: station_id
+        description: "Weather station identifier."
+        tests:
+          - not_null
+  
   - name: int_weather_underground_joined
-    description: Combines Weather Underground observations from France and Belgium.
+    description: "Combines Weather Underground observations from France and Belgium."
 
     columns:
       - name: observed_at
