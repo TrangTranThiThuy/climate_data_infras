@@ -1,0 +1,10 @@
+.git
+.gitignore
+.venv
+__pycache__
+target
+logs
+terraform
+src
+.DS_Store
+profiles.yml
