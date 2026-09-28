@@ -14,3 +14,5 @@ logs/
 .xls
 
 .tfvars
+
+.terraform.lock.hcl
