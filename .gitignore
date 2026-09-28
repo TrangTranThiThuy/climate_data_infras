@@ -28,7 +28,6 @@ dbt_packages/
 
 
 # Terraform files
-/terraform
 .tfvars
 .terraform.lock.hcl
 /.terraform/
