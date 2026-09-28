@@ -1,22 +1,39 @@
-
+# Ignore build artifacts and temporary files
 target/
 dbt_packages/
 logs/
 .env
+env/
+venv/
+ENV/
 
+# Ignore data and excel_data directories
 /data
 /excel_data
 
+# Ignore macOS system files
 .DS_Store
+Thumbs.db
 
+# Ignore Excel and CSV files
 .xlsx
 .csv
 .xls
 
-.tfvars
+#dbt
+profiles.yml
+logs/
+target/
+dbt_packages/
 
+
+# Terraform files
+/terraform
+.tfvars
 .terraform.lock.hcl
 /.terraform/
-
 *.tfstate
 *.tf.disabled
+.terraformrc
+terraform.rc
+crash.log
