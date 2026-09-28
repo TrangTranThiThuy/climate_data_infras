@@ -16,3 +16,4 @@ logs/
 .tfvars
 
 .terraform.lock.hcl
+.terraform/
